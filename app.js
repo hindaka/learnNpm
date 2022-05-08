@@ -2,24 +2,24 @@ var validator = require('validator');
 const chalk = require('chalk');
 const log = console.log;
 // validasi email
-// console.log(validator.isEmail('foo@bar.com'));
-// // validasi nomor hp sesuai dengan region country
-// console.log(validator.isMobilePhone('081821698379','id-ID'));
-// // check numeric
-// console.log(validator.isNumeric('081821698379'));
+console.log(validator.isEmail('foo@bar.com'));
+// validasi nomor hp sesuai dengan region country
+console.log(validator.isMobilePhone('081821698379','id-ID'));
+// check numeric
+console.log(validator.isNumeric('081821698379'));
 
-// //chalk syntax
-// // Combine styled and normal strings
-// log(chalk.blue('Hello') + ' World' + chalk.red('!'));
+//chalk syntax
+// Combine styled and normal strings
+log(chalk.blue('Hello') + ' World' + chalk.red('!'));
 
-// // Compose multiple styles using the chainable API
-// log(chalk.blue.bgRed.bold('Hello world!'));
+// Compose multiple styles using the chainable API
+log(chalk.blue.bgRed.bold('Hello world!'));
 
-// // Pass in multiple arguments
-// log(chalk.blue('Hello', 'World!', 'Foo', 'bar', 'biz', 'baz'));
+// Pass in multiple arguments
+log(chalk.blue('Hello', 'World!', 'Foo', 'bar', 'biz', 'baz'));
 
-// // Nest styles
-// log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
+// Nest styles
+log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
 
 // Nest styles of the same type even (color, underline, background)
 log(chalk.green(
